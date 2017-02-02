@@ -33,4 +33,10 @@ describe Deck do
     end
   end
 
+  # allow(dummy_deck).to receive(:size).and_return(0)
+  # it "deck should lose one card" do
+  #   expect(deck.size).to eq(51)
+  # end
+
+
 end
