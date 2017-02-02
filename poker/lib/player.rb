@@ -2,6 +2,7 @@ require_relative "hand"
 
 class Player
 
+  attr_reader :name, :pot, :hand
   def initialize(name, pot)
     @name = name
     @pot = pot
@@ -9,11 +10,11 @@ class Player
   end
 
   def draw(deck)
-    @hand << deck.draw
+    @hand.hand << deck.draw_card
   end
 
   def discard(card)
-    @hand.delete(card)
+    @hand.hand.delete(card)
   end
 
   def collect_winnings(num)

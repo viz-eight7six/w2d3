@@ -34,8 +34,8 @@ class Deck
     @deck.shuffle!
   end
 
-  def draw
+  def draw_card
     @deck.pop
-  end 
+  end
 
 end
